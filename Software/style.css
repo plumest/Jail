@@ -7,3 +7,10 @@ body {
     margin: 3vh 0;
     text-align: center;
 }
+
+#mainBody {
+    margin: 0 auto;
+    height: 70vh;
+    width: 90vw;
+    border: 2px solid black;
+}
