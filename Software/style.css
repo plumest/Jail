@@ -17,5 +17,10 @@ body {
 
 .jumbotron {
     background: url("/Software/Picture/1.jpg");
-    
+    filter: contrast(70%);
+}
+
+.switch{
+    height: 50vh;
+    width: 10vw;
 }
