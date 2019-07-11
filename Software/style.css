@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: skyblue;
+    background: url(2.jpg);
+    opacity: 0.6;
+}
+
+.header {
+    margin: 3vh 0;
+    text-align: center;
+}
+
+#mainBody {
+    margin: 0 auto;
+    height: 80vh;
+    width: 90vw;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.jumbotron {
+<<<<<<< HEAD
+    background: url("/Software/Picture/1.jpg");
+    filter: contrast(70%);
+}
+
+.switch{
+    height: 50vh;
+    width: 10vw;
+}
+=======
+    background: url(1.jpg);
+    filter: contrast(100%);
+    
+}
+
+.text{
+    text-align: center;
+}
+>>>>>>> 06d63e4a849a15f74073f733ae333a452128891b
