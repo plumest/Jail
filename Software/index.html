@@ -20,14 +20,36 @@
     </div>
 
     <div id="mainBody">
-        <button type="button" class="btn btn-primary">On</button>
-        <button type="button" class="btn btn-primary">Off</button>
-        <br>
-        <button type="button" class="btn btn-primary">On</button>
-        <button type="button" class="btn btn-primary">Off</button>
-        <br>
-        <button type="button" class="btn btn-primary">On</button>
-        <button type="button" class="btn btn-primary">Off</button>
+        <div class="container-fulid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 text">
+                            <h1>Door</h1>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <button id="doorT" type="button" class="btn btn-primary" onclick="postData(data = {'door':'open'})">On</button>
+                            <button id="doorF" type="button" class="btn btn-primary" onclick="postData(data = {'door':'close'})">Off</button>
+                        </div>
+        </div>
+        <div class="container-fulid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 text">
+                        <h1>Buzzer</h1>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <button id="buzzerT" type="button" class="btn btn-primary" onclick="postData(data = {'buzzer':'open'})">On</button>
+                        <button id="buzzerF" type="button" class="btn btn-primary" onclick="postData(data = {'buzzer':'close'})">Off</button>
+                    </div>
+        </div>
+        <div class="container-fulid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 text">
+                        <h1>Light</h1>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <button id="lightT" type="button" class="btn btn-primary" onclick="postData(data = {'light':'open'})">On</button>
+                        <button id="lightF" type="button" class="btn btn-primary" onclick="postData(data = {'light':'close'})">Off</button>
+                    </div>
+        </div>
     </div>
 
 

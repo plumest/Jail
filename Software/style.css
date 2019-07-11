@@ -14,31 +14,16 @@ body {
     margin: 0 auto;
     height: 80vh;
     width: 90vw;
-    border: 2px solid black;
+    border-radius: 25px;
     background-color: white;
 }
 
 .jumbotron {
-<<<<<<< HEAD
     background: url(1.jpg);
     filter: contrast(100%);
     
 }
 
-.custom-switch .custom-control-label::before{
-    width: 50px;
-    height: 20px;
+.text{
+    text-align: center;
 }
-/* .custom-switch .custom-control-label::after{
-    
-} */
-=======
-    background: url("/Software/Picture/1.jpg");
-    filter: contrast(70%);
-}
-
-.switch{
-    height: 50vh;
-    width: 10vw;
-}
->>>>>>> a6fa45fd0b964f052c8348965358ecfc53aed1fa
