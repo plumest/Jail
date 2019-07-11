@@ -10,7 +10,12 @@ body {
 
 #mainBody {
     margin: 0 auto;
-    height: 70vh;
+    height: 80vh;
     width: 90vw;
     border: 2px solid black;
+}
+
+.jumbotron {
+    background: url("/Software/Picture/1.jpg");
+    
 }
