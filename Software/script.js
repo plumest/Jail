@@ -9,17 +9,18 @@ const baseURL = 'https://exceed.superposition.pknn.dev';
 // fetch(baseURL + '/data/jitrada/door')
 //     .then((res) => res.text())
 //     .then((data) => console.log(data))
-//     .catch((err) => console.log(err));
+//     .catch((err) => console.log(err))
 
+// {
+//     "door": 'open',
+//     "buzzer": 'open',
+//     "light": 'open',
+// }
 
-function postData() {
+function postData(data = {}) {
     return (fetch(baseURL + '/data/jitrada', {
         method: 'POST',
-        body: JSON.stringify({"data": {
-            "door": 'open',
-            "buzzer": 'open',
-            "light": 'open',
-        }}),
+        body: JSON.stringify({"data": data}),
         headers: {
             'Content-Type' : 'application/json'
         }
@@ -28,7 +29,7 @@ function postData() {
       .catch((err) => console.log(err))
     )
 }
-doorStatus = () => document.getElementById('customSwitch1').checked ? 'open': 'close';
+doorStatus = () => document.getElementById('door').checked ? 'open': 'close';
 
 function putData() {
     let statusDoor = '';
