@@ -19,6 +19,7 @@ body {
 }
 
 .jumbotron {
+<<<<<<< HEAD
     background: url(1.jpg);
     filter: contrast(100%);
     
@@ -31,3 +32,13 @@ body {
 /* .custom-switch .custom-control-label::after{
     
 } */
+=======
+    background: url("/Software/Picture/1.jpg");
+    filter: contrast(70%);
+}
+
+.switch{
+    height: 50vh;
+    width: 10vw;
+}
+>>>>>>> a6fa45fd0b964f052c8348965358ecfc53aed1fa
