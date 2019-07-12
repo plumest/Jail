@@ -60,12 +60,20 @@ def test():
 global lightstate
 global doorstate
 global alarmstate
+global ledstate
+
+doorstate = 'off'
+ledstate = 'on'
+alarmstate = 'off'
 
 lightstate = True
 
+
 def lightcontrol(mode):
     global lightstate
-    # Red
+    global ledstate
+    if ledstate == 'off':
+        mode == 'off'
     if mode == 'red':
         control.R.value(1)
         control.G.value(0)
@@ -130,12 +138,13 @@ def beep(sl_duration):
     Buzzer.deinit()
 
 def webcontrol():
-    global lightstate
+    global ledstate
     global doorstate
     global alarmstate
 
     while True:
         # Fetch from server.
+        # Get data
         data = {'door': doorstate,
                 'buzzer': alarmstate,
                 'light': alarmstate}
